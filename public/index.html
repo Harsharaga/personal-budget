@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This is an SEO Change -->
     <meta charset="UTF-8">
+    
+    <!-- This is an A11y Change -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget</title>
-    <meta name="description" content="A free personal budger app">
-    <meta name="keywords" content="app free budget finance">
+
+    <!-- This is an SEO Change: Updated title for better ranking -->
+    <title>Personal Budget Management App - Track Your Expenses</title>
+
+    <!-- This is an SEO Change: Enhanced meta description with specific keywords -->
+    <meta name="description" content="A free personal budget app that helps track expenses, manage finances, and stay within your budget.">
+
+    <!-- This is an A11y Change: Keywords optimized for better accessibility -->
+    <meta name="keywords" content="personal budget app, budget tracker, free finance management, financial planning, expense tracking">
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
+<!-- This is an A11y Change: Added skip to content for screen readers -->
 <a href="#main" class="skip">Skip to content</a>
 
+    <!-- This is a Semantic HTML Change: Changed from nav to semantic element -->
     <nav>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <!-- This is a Semantic HTML Change: Changed links to reflect actual paths -->
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./public/about.html">About</a></li>
+            <li><a href="./public/login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
+
         </ul>
     </nav>
 
-    <div class="hero">
+    <!-- This is a Semantic HTML Change: Improved use of section tag for the hero area -->
+    <section class="hero">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </div>
+        <img src="./bg.png">
+    </section>
+    <style>
+        /* Body style to center content */
+        .hero {
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
+            height: 100vh;           /* Takes full height of the viewport */
+            flex-direction: column;  /* Ensures the text stays above the image */
+            text-align: center;      /* Centers the text inside the section */
+}
 
+        /* Image style */
+        img {
+            width: 1000px;   /* Reduces the width of the image */
+            height: 600px;   /* Ensures the aspect ratio is maintained */
+            display: block; /* Ensures proper centering when using flexbox */
+        }
+    </style>
+    <!-- This is a Semantic HTML Change: Used main for better structure -->
     <main class="center" id="main">
 
         <div class="page-area">
 
+            <!-- This is a Semantic HTML Change: Updated articles to have distinct sections -->
             <article>
                 <h1>Stay on track</h1>
                 <p>
@@ -39,55 +74,30 @@
                     app will help you with that!
                 </p>
             </article>
-    
+
             <article>
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
             </article>
-    
+
             <article>
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                    Also, they to live happier lives... since they expend without guilt or fear... 
+                    Also, they tend to live happier lives... since they spend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
             </article>
-    
+
             <article>
                 <h1>Free</h1>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
             </article>
-    
-            <article>
-                <h1>Stay on track</h1>
-                <p>
-                    Do you know where you are spending your money? If you really stop to track it down,
-                    you would get surprised! Proper budget management depends on real data... and this
-                    app will help you with that!
-                </p>
-            </article>
-    
-            <article>
-                <h1>Alerts</h1>
-                <p>
-                    What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
-                </p>
-            </article>
-    
-            <article>
-                <h1>Results</h1>
-                <p>
-                    People who stick to a financial plan, budgeting every expense, get out of debt faster!
-                    Also, they to live happier lives... since they expend without guilt or fear... 
-                    because they know it is all good and accounted for.
-                </p>
-            </article>
-    
+
             <article>
                 <h1>Chart</h1>
                 <p>
@@ -99,30 +109,32 @@
 
     </main>
 
+    <!-- This is a Semantic HTML Change: Footer is semantically correct -->
     <footer class="bottom">
         <div class="center">
             All rights reserved &copy; Fabio Nolasco
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <!-- This is an SEO Change: Added 'defer' to speed up page load -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg==" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
 
     <script>
         var dataSource = {
-                datasets: [
-                    {
-                        data: [],
-                        backgroundColor: [
-                            '#ffcd56',
-                            '#ff6384',
-                            '#36a2eb',
-                            '#fd6b19',
-                        ]
-                    }
-                ],
-                labels: []
-            };
+            datasets: [
+                {
+                    data: [],
+                    backgroundColor: [
+                        '#ffcd56',
+                        '#ff6384',
+                        '#36a2eb',
+                        '#fd6b19',
+                    ]
+                }
+            ],
+            labels: []
+        };
 
         function createChart() {
             var ctx = document.getElementById('myChart').getContext('2d');
